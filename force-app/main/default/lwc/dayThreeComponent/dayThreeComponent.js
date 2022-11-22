@@ -7,14 +7,12 @@ export default class DayThreeComponent extends LightningElement {
 
     handleFirstName(event) {
         this.firstName = event.target.value;
-        console.log('event' + event.target.value);
         this.calculateFullName();
 
 
     }
     handleLastName(event) {
         this.lastName = event.target.value;
-        console.log('event' + event.target.value);
         this.calculateFullName();
 
     }
