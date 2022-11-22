@@ -1,0 +1,28 @@
+<template>
+    HELLO WORLD, I am fighting for my country
+    <br> <!-- Means Break, or change the line -->
+    First Name: {contact_firstName} <br/>
+    Age: {contact_age} <br/>
+    Salary : {contact_salary}
+
+    <hr/> <!-- meaning horizontal Row-->
+    <!-- Diaplaying Data -->
+     <lightning-formatted-name
+                first-name={contact_firstName}
+                last-name={contact_lastName}
+                format="short"
+        ></lightning-formatted-name><br/>
+        <lightning-formatted-number
+         value={contact_salary}
+         format-style="currency" currency-code="USD"><br/>
+        </lightning-formatted-number>
+       <div style = "display: inline-flexbox;">
+        Is Salared:
+        <lightning-input
+    type="checkbox"
+    label="Is Salaried"
+    name="input1"
+    value={contact_isSalaried}
+    ></lightning-input> </div><br/>
+
+</template>

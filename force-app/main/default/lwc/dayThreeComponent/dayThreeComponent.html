@@ -1,0 +1,21 @@
+<template>
+    <lightning-card  title="Day Three">
+        <lightning-button label="New" slot="actions"></lightning-button>
+        <div class="slds-p-horizontal_small">
+          <lightning-input 
+             type="text" 
+             label="Enter the first name" 
+             onchange={handleFirstName}>
+          </lightning-input>
+          <lightning-input 
+             type="text" 
+             label="Enter the last name" 
+             onchange={handleLastName}>
+          </lightning-input>
+          </div>
+          <div slot="footer">
+             FullName: {fullName}
+          </div>
+     </lightning-card>
+
+</template>
