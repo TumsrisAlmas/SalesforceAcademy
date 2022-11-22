@@ -1,11 +1,12 @@
 <template>
     Name:&nbsp;
     <!--(dot) operator to get the values from the Object.-->
-    <lightning-formatted-name
+    <b>
+   <lightning-formatted-name
             first-name={contact.firstName}
             last-name={contact.lastName}
             format="short"
-    ></lightning-formatted-name><br/>
+    ></lightning-formatted-name> </b><br/>
 
     Phone:&nbsp;
     <lightning-formatted-phone 
@@ -19,8 +20,8 @@
 
     Age:&nbsp;
     <lightning-formatted-number 
-        value={contact.age}
-    ></lightning-formatted-number><br/>
+        value={contact.age} 
+    ></lightning-formatted-number> years <br/>
 
     Salary:&nbsp;
     <lightning-formatted-number 
